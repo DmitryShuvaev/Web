@@ -1,0 +1,626 @@
+body{
+    margin: 0;
+      font: 700 13px Helvetica,Arial;
+      background-color: #e4dfdf;
+      line-height: 1.6;
+}
+.blacktext{
+ color: black;
+ line-height: 1.6;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+
+
+.button{
+
+  
+    border-radius: 3px;
+  
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 30px;
+    width: 100px;
+    box-sizing: border-box;
+    
+}
+ul{
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    
+}
+a:hover{
+    color: #000;
+    background-color: #dadada;
+}
+/* Bottom right text */
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%; /* Need a specific value to work */ 
+   
+   
+    padding-left: 20px;
+    padding-right: 20px;
+  
+ 
+ 
+
+}
+.Logo{
+   float: left;
+  
+}
+/**************Central menu**************/
+.containerCentral {
+       color: #fff;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center!important;    
+}
+.H1pc
+{
+  margin: 0;
+}
+.centbtn{
+border-radius: 22px;
+  background-color:  #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.5s;
+   box-sizing: border-box;
+}
+.centbtn:hover {    color: #000;
+    background-color: #dadada;}
+/****************4 top border block********************/
+.borderTop{
+    margin: auto;
+    border-top: 5px solid black;
+    width: 3%;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 50px;
+     background-color: #dadada;
+}
+
+/****************4 images block********************/
+#largebox{
+  width:80%;
+   height: 350px;
+   // background-color: #00F;
+    padding-left: 17%;
+    margin-left: auto; 
+   margin-right: auto;
+    
+}
+#box1, #box2,#box3,#box4{
+    float: left;
+    width:15%;
+    height: 200px;
+
+   text-align: center;
+    padding: 20px;
+     font: 700 13px Helvetica,Arial;
+    background-color: #fff;
+     box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#box2,#box3,#box4{
+  margin-left: 2%;   
+}
+/****************images block with 2 btns********************/
+.Mainbox{
+     position: relative;
+     width: 100%; 
+    margin: auto;
+    margin-bottom: 20px;
+}
+.Mainbox img{
+    width: 100%;
+}
+.MainCentralbox{
+   position: absolute;
+    top: 20px;
+   left: 5%;
+    width: 90%;
+   //  background-color: #00F;
+}
+.LeftMainbox{
+    width: 40%;
+    margin-top: 80px;
+   // background-color: #1ff;
+    float: left;
+     font: 700 15px Helvetica,Arial;
+     line-height: 1.6;
+    color: #fff;
+}
+.btns_ul{
+    margin-left: 0; 
+   float: left;
+ 
+    padding-top: 10px;
+   //  background-color: #fff;
+}
+btns_ul.a{
+
+    text-decoration: none;
+
+    
+}
+btns-ul.li{
+    display: inline;
+     padding-left: 0;
+
+}
+.centbtn2{
+border-radius: 22px;
+  background-color:  #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 22px;
+  text-align: center;
+  font-size: 12px;
+ 
+  margin-right: 20px;
+  opacity: 1;
+  transition: 0.5s;
+   box-sizing: border-box;
+}
+.btns_ul a{
+  
+    text-decoration: none;
+ 
+    
+}
+
+.RightMainbox{
+    margin-top: 60px;
+   padding-left: 40px;
+    width: 40%;
+    float: left;
+
+}
+/****************Multiple images grid********************/
+.myBtnContainer{
+   //   background-color:  #4CAF50;
+    height: 35px;
+ 
+  padding: 0;
+}
+.myBtnContainer ul{
+  
+   
+    text-align: center; 
+}
+.myBtnContainer ul li{
+
+
+ 
+}
+.myBtnContainer a{
+  color: #636262;
+        text-decoration: none;
+}
+.btn3{
+    display: inline-block;
+    border-radius: 3px;
+  
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    
+}
+.btn3.active {
+  //background-color: #4CAF50;
+  color: #4CAF50;
+}
+.myBtnContainer a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+/****************Multiple images grid********************/
+/* Center website */
+.MainPicBoxConteiner1{
+   display: block;
+    height:550px;
+     //  background-color: #1ff;
+}
+.mainPbox {
+  
+    width: 70%;
+    margin: auto;
+    //  background-color: #1ff;
+     padding-top: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnsImg {
+    float: left;
+    width: 20%;
+   //  background-color: #11f;
+  padding-bottom: 2%; 
+}
+.columnsImg img{
+    width: 100%;
+}
+.Pbox1, .Pbox5{
+ padding-left: 7%; 
+   
+}
+.Pbox2,.Pbox3,.Pbox4,.Pbox6,.Pbox7,.Pbox8{
+ padding-left: 2%; 
+}
+.Pbox4,.Pbox8{
+ padding-right: 7%; 
+}
+/****************Our Blog Posts box********************/
+.CTNBox{
+    position: relative;
+
+
+}
+.headerBlogPost{
+     position: absolute;
+    top:80px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%; /* Need a specific value to work */  
+    
+    height: 100px; 
+    color: #fff;
+     line-height: 1.6;
+}
+.borderTopWhite{
+        margin: auto;
+    border-top: 5px solid white;
+    width: 5%;
+    margin-top: -13px;
+    padding: 0;
+    margin-bottom: 50px;
+    background-color: #dadada;
+}
+.MainPicBoxcntc{
+ 
+    position: absolute;
+    top:200px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%; /* Need a specific value to work */  
+    // background-color: #11f;
+    height: 500px;
+ 
+}
+.LeftPicBoxcnt{
+    position: relative;
+    float: left;
+   height: 500px;
+     // background-color: #f1f;
+    width: 50%;
+}
+.LeftPicBoxcnt img{
+    width: 97%;
+}
+.RightPicBoxcnt{
+  
+   height: 250px;
+     // background-color: #f11;
+    width: 50%;
+    float: right; 
+    height: 100%;
+ //padding-left: 3px;
+    text-align: right;
+}
+.RightPicBoxcnt img{
+  
+    margin-top: 0;
+ 
+      
+  
+}
+#leftImginrightbox{
+  
+    padding-top: 10px;
+   // padding-left: 10px;
+}
+.leftText{
+     position: absolute;
+    bottom: 43px;
+    left: 0px;  
+    color: #fff;
+    background-color: black;
+    opacity: 0.5;
+    width: 97%;
+    height: 100px;
+}
+.rTopim{
+    position: relative;
+}
+.rTopimText{
+      position: absolute;
+    bottom: 5px;
+    left: 0px;  
+    color: #fff;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100px; 
+    text-align: left;
+}
+.rBotim{
+  position: relative;   
+}
+.rBotimText{
+       position: absolute;
+    bottom: 5px;
+    left: 0px;  
+    color: #fff;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100px; 
+    text-align: left;
+
+}
+.OpacityNo{
+    position: relative;
+ color: #fff;
+}
+.absp{
+    position: absolute;
+   bottom: 10px;
+    left: 20px;
+    color: white;
+    text-align: left;
+}
+.absp1{
+    position: absolute;
+   bottom: 50px;
+   left: 20px;
+    color: white;
+    text-align: left;
+}
+/****************Blog4images********************/
+#largebox2{
+    margin-top: 50px;
+  width:80%;
+   height: 150px;
+   // background-color: #00F;
+   // padding-left: 17%;
+    margin-left: auto; 
+   margin-right: auto;
+    
+}
+#box12, #box22,#box32,#box42{
+    float: left;
+    width:15%;
+ 
+
+   text-align: center;
+padding-bottom: 10px;
+    padding-top: 10px;
+     font: 700 13px Helvetica,Arial;
+    color: #4CAF50;
+    background-color: #c5bebe;
+    
+}
+#box22,#box32,#box42{
+  margin-left: 2%;   
+}
+#box42{
+    margin-right: 17%;
+}
+#box12{
+    margin-left: 17%;
+}
+/****************ContactUsForm********************/
+.BckgroundImg{
+    position: relative;
+}
+.MainFormBlog{
+    position: absolute;
+//  background-color: #00F;
+    width: 60%;
+    height: 320px;;
+    top: 180px;
+    left: 20%;
+
+}
+.LeftImgMap{
+    float: left;
+    width: 570px;
+}
+.RightFormbloginfo{
+  // float: left;
+ // display: block; 
+    //background-color: #f0F; 
+    height: 320px;
+}
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 23%;
+  margin-top: 0px;
+    height: 50px;
+    padding-left: 2%;
+}
+.col-75mes {
+  float: left;
+  width: 48%;
+  margin-top: 2%;
+   // height: 80px;
+  padding-left: 2%;
+  //background: rgba(255,255,255,0.2); 
+        color: #1ff;
+}
+/* Style inputs, select elements and textareas */
+.col-75 input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+   border:none;
+  box-sizing: border-box;
+  resize: vertical;
+    height: 50px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+.col-75mes input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  //border: 1px solid #ccc;
+  //border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+    height: 185px;
+  background: rgba(255,255,255,0.2);
+    color: #fff;
+     
+    border:none;
+     font-size:20px;
+}
+.btns_ul2 a{ 
+    text-decoration: none;    
+}
+.btns_ul2{
+    margin-left: 2%; 
+      //margin-bottom: 3%; 
+   float: left;
+ //height: 24%;
+    padding-top: 10px;
+     //background-color: #fff;
+      text-decoration: none;
+}
+/****************footer********************/
+#footer{
+position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+ background-color:  #292929;  
+}
+
+/****************footer btns********************/
+.FooterContainer{
+      // background-color:  #292929;
+   // height: 30px;
+ width: 50%;
+    //height: 80px;
+    float: left;
+  padding-top: 30px; 
+    
+     
+}
+.foterLefttext{
+    width: 50%;
+    margin-top: 0;
+    float: left;
+    color: #fff;
+    text-align: center;
+     padding-top: 30px; 
+}
+.FooterContainer ul{
+   // margin-left: 50%;
+   margin-top: 0;
+   text-align: center;
+}
+.FooterContainer ul li{
+   margin-top: 0;
+
+ 
+}
+.FooterContainer a{
+  //color: #636262;
+        text-decoration: none;
+    margin-left: 10px;
+     margin-top: 0;
+}
+
+
+.FooterContainer a:hover{
+    color: #000;
+    background-color: #fff;
+}
+.fa {
+    //padding: 10px;
+    padding-top: 2%;
+    padding-left: 1.7%;
+    padding-right: 1.7%;
+    padding-bottom: 1.3%;
+    //font-size: 15px;
+   // width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+     
+}
+.fa-facebook {
+  background: #4CAF50;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
