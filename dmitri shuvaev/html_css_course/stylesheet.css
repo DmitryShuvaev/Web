@@ -11,8 +11,10 @@ body{
 /* Container holding the image and the text */
 .container {
     position: relative;
+    width: 100%;
+    overflow:hidden;
 }
-
+ #centbimg{width:100%;overflow:hidden;}
 
 
 .button{
@@ -107,38 +109,57 @@ border-radius: 22px;
 }
 
 /****************4 images block********************/
-#largebox{
-  width:80%;
-   height: 350px;
-   // background-color: #00F;
-    padding-left: 17%;
-    margin-left: auto; 
-   margin-right: auto;
-    
+    /* Setting up our grid */
+.container14 {
+	width: 100%; /*Set the width of the entire website here */
+	//height:450px;
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+    overflow: hidden;
+	   //background-color: red;
 }
-#box1, #box2,#box3,#box4{
-    float: left;
-    width:15%;
-    height: 200px;
-
-   text-align: center;
+.row1 {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0;
+	  //background-color: green;
+}
+.four {
+	width: 23.5%;
+	float:left;
+	margin-right: 30px;
+}
+      
+        
+.forr{margin-left: 16.4%; padding-top:0;height: 400px; width: 84%;
+    
+    //background-color: brown;
+}
+        /*//1290px*/
+.forr .four{height: 260px; background-color: #fbeab6;width: 260px;}
+.forr .altext{   text-align: center;
     padding: 20px;
      font: 700 13px Helvetica,Arial;
     background-color: #fff;
      box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#box2,#box3,#box4{
-  margin-left: 2%;   
-}
+        }
+ .forr .altext h2{ justify-content: center;text-align: center;vertical-align: middle;padding-top: 50px;}
+.lastBlock{margin-right: 0;}
+
+
 /****************images block with 2 btns********************/
 .Mainbox{
      position: relative;
      width: 100%; 
+	
     margin: auto;
     margin-bottom: 20px;
+    overflow: auto;
 }
-.Mainbox img{
+.Mainbox #centbimg{
     width: 100%;
+	 height:500px;
 }
 .MainCentralbox{
    position: absolute;
@@ -193,6 +214,49 @@ border-radius: 22px;
     text-decoration: none;
  
     
+}
+
+.LeftMainbox nav{
+   // background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+ .LeftMainbox nav ul{
+    list-style: none;
+    margin: 0 auto;
+}
+.LeftMainbox nav ul li{
+    float: left;
+    display: inline;
+            border-radius: 22px;
+    background-color: #4CAF50;
+     margin-left: 0; 
+    margin-right: 5%;
+}
+.LeftMainbox nav a:hover, LeftMainbox nav a:active,.LeftMainbox nav .active a:link, LeftMainbox nav .active a:visited{
+    opacity: 1;
+    transition: 0.5s;
+    // background-color:#CF5C3F;
+  text-shadow: none; 
+         border-radius: 22px;
+    color: black;
+}
+.LeftMainbox nav a:link, .LeftMainbox nav a:visited{
+   // color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+height: 20px;
+      text-decoration: none;
+
+}
+.LeftMainbox nav ul li a{
+   color: #fff;
+    
+    // border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;   
 }
 
 .RightMainbox{
@@ -280,24 +344,21 @@ border-radius: 22px;
  padding-right: 7%; 
 }
 /****************Our Blog Posts box********************/
-.CTNBox{
-    position: relative;
 
-
-}
 .headerBlogPost{
      position: absolute;
-    top:80px;
+    top:5%;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     width: 60%; /* Need a specific value to work */  
     
-    height: 100px; 
+    height: auto; 
     color: #fff;
      line-height: 1.6;
 }
+
 .borderTopWhite{
         margin: auto;
     border-top: 5px solid white;
@@ -307,39 +368,17 @@ border-radius: 22px;
     margin-bottom: 50px;
     background-color: #dadada;
 }
-.MainPicBoxcntc{
- 
-    position: absolute;
-    top:200px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 60%; /* Need a specific value to work */  
-    // background-color: #11f;
-    height: 500px;
- 
+
+
+
+        /*
+		
+.rTopim:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-.LeftPicBoxcnt{
-    position: relative;
-    float: left;
-   height: 500px;
-     // background-color: #f1f;
-    width: 50%;
-}
-.LeftPicBoxcnt img{
-    width: 97%;
-}
-.RightPicBoxcnt{
-  
-   height: 250px;
-     // background-color: #f11;
-    width: 50%;
-    float: right; 
-    height: 100%;
- //padding-left: 3px;
-    text-align: right;
-}
+
 .RightPicBoxcnt img{
   
     margin-top: 0;
@@ -347,68 +386,60 @@ border-radius: 22px;
       
   
 }
-#leftImginrightbox{
-  
-    padding-top: 10px;
-   // padding-left: 10px;
-}
-.leftText{
-     position: absolute;
-    bottom: 43px;
-    left: 0px;  
-    color: #fff;
-    background-color: black;
-    opacity: 0.5;
-    width: 97%;
-    height: 100px;
-}
-.rTopim{
-    position: relative;
-}
-.rTopimText{
-      position: absolute;
-    bottom: 5px;
-    left: 0px;  
-    color: #fff;
-    background-color: black;
-    opacity: 0.5;
-    width: 100%;
-    height: 100px; 
-    text-align: left;
-}
-.rBotim{
-  position: relative;   
-}
-.rBotimText{
-       position: absolute;
-    bottom: 5px;
-    left: 0px;  
-    color: #fff;
-    background-color: black;
-    opacity: 0.5;
-    width: 100%;
-    height: 100px; 
-    text-align: left;
+*/
+.MainBoxcontent1{	position:relative;
+height: 715px;
+  	background: url(img/blog-bg.png) no-repeat center; 
+    background-size: cover;
+    text-align: center;
+width: 100%;
 
+    padding-top: 0;
+overflow:auto;
 }
-.OpacityNo{
-    position: relative;
- color: #fff;
+
+.pictureBoxwithinfor1{float: left;width: 1170px; height: 715px;
+    //background-color: #fbeab6;
+    margin-top: 100px;margin-left: 19%;margin-right:auto;}
+.LeftpictureBox1{float: left;width: 570px;height: 470px; background: url(img/blog_01.jpg) no-repeat center; 
+    margin-right: 30px;}
+.RightpictureBox1{float: left;
+    //background-color: aqua;
+    width: 570px;margin: 0;height: 470px;}
+.rowtop1{float: left;height:220px;
+    //background-color: #e6e6e6;
+	 background: url(img/blog_02.jpg) no-repeat center; 
+    margin: 0;padding: 0; margin-bottom:30px;width: 100%;}
+
+
+.rowbott1{float: left;height:220px;
+    //background-color: #fbeab6;
+	  background: url(img/blog_03.jpg) no-repeat center; 
+    margin: 0;padding: 0;;width: 100%;}
+.lefImageText1{
+margin-top:360px;
+height:100px;
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+text-align:left;
+padding-left:20px; 
+padding-top:10px; 
+color:#fff; 
 }
-.absp{
-    position: absolute;
-   bottom: 10px;
-    left: 20px;
-    color: white;
-    text-align: left;
+.rightTopImageText1{
+margin-top:110px;
+height:100px;
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+text-align:left;
+padding-left:20px;
+padding-top:10px;  
+color:#fff; 
 }
-.absp1{
-    position: absolute;
-   bottom: 50px;
-   left: 20px;
-    color: white;
-    text-align: left;
-}
+
+
+
+
+
+   .leftText h3,p,.rBotimText h3,p,.rTopimText h3{padding-left: 3%;padding-bottom: 0;line-height: 1; clear: both;}   
 /****************Blog4images********************/
 #largebox2{
     margin-top: 50px;
@@ -443,59 +474,74 @@ padding-bottom: 10px;
     margin-left: 17%;
 }
 /****************ContactUsForm********************/
-.BckgroundImg{
-    position: relative;
-}
-.MainFormBlog{
-    position: absolute;
-//  background-color: #00F;
-    width: 60%;
-    height: 320px;;
-    top: 180px;
-    left: 20%;
 
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
 }
-.LeftImgMap{
-    float: left;
-    width: 570px;
+.MainBoxcontent{	height: 565px;
+  	background: url(img/contact-bg.png) no-repeat center; 
+    background-size: cover;
+    text-align: center;
+width: 100%;
+position:relative;
+    padding-top: 0;
 }
-.RightFormbloginfo{
-  // float: left;
- // display: block; 
-    //background-color: #f0F; 
-    height: 320px;
+.pictureBoxwithinfor{float: left;width: 1160px; height: 320px;
+    //background-color: #fbeab6;
+    margin-top: 122.5px;margin-left: 19.8%;}
+.LeftpictureBox{float: left;width: 570px;height: 320px; background: url(img/map.jpg) no-repeat center; 
+    margin-right: 20px;}
+.RightpictureBox{float: left;
+    //background-color: aqua;
+    width: 570px;margin: 0;height: 320px;}
+.rowtop{float: left;height:50px;
+    //background-color: #e6e6e6;
+    margin: 0;padding: 0; padding-bottom:20px;width: 100%;}
+.texttopname{float: left;height: 50px; margin: 0; width:50%; 
+    //background-color:  #d13328;
 }
+.topleftTexbox{margin-right: 20px;width: 265px;}
+
+
+
 /* Floating column for inputs: 75% width */
+/*
 .col-75 {
   float: left;
-  width: 23%;
+  width: 22%;
   margin-top: 0px;
-    height: 50px;
-    padding-left: 2%;
+   // height: 50px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
 }
+*/
 .col-75mes {
   float: left;
-  width: 48%;
-  margin-top: 2%;
-   // height: 80px;
-  padding-left: 2%;
+  width: 46%;
+  //margin-top: 2%;
+   // height: auto;
+  padding-left: 1%;
   //background: rgba(255,255,255,0.2); 
         color: #1ff;
 }
 /* Style inputs, select elements and textareas */
-.col-75 input[type=text], select, textarea{
+.col-75 input[type=text], select{
   width: 100%;
   padding: 12px;
    border:none;
   box-sizing: border-box;
   resize: vertical;
-    height: 50px;
+   // height: 50px;
     background: rgba(255,255,255,0.2);
     color: #fff;
 }
 .col-75mes input[type=text], textarea{
   width: 100%;
-  padding: 12px;
+ // padding: 12px;
   //border: 1px solid #ccc;
   //border-radius: 4px;
   box-sizing: border-box;
@@ -521,27 +567,28 @@ padding-bottom: 10px;
 }
 /****************footer********************/
 #footer{
-position: absolute;
+//position: absolute;
     width: 100%;
     height: 80px;
     bottom: 0;
- background-color:  #292929;  
+ background-color:  #292929; 
+    clear: both;
 }
 
 /****************footer btns********************/
 .FooterContainer{
       // background-color:  #292929;
    // height: 30px;
- width: 50%;
+ width: 48%;
     //height: 80px;
     float: left;
   padding-top: 30px; 
-    
+    padding-left: 0;
      
 }
 .foterLefttext{
-    width: 50%;
-    margin-top: 0;
+    width: 48%;
+    margin: 0;
     float: left;
     color: #fff;
     text-align: center;
@@ -590,13 +637,14 @@ position: absolute;
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: absolute; /* Stay in place */
+   // z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
+    //bottom: 50%;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 80%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -607,7 +655,7 @@ position: absolute;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
 }
 
 /* The Close Button */
@@ -624,3 +672,46 @@ position: absolute;
     text-decoration: none;
     cursor: pointer;
 }
+/*modal form*/
+    #theForm{
+    background-color: #474e5d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+       
+    overflow: auto;  	   
+        }
+        .row{
+            display: table-row;
+        }
+        .row label{
+            display: table-cell;
+            padding: 10px;
+            text-align: left;
+        }
+        .row input{
+            display: table-cell;
+                  padding: 2px;
+        }
+        
+        /* Set a style for all buttons */
+.send {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    //margin: 8px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  
+}
+.send:hover {
+    opacity:1;
+          
+}
+
+
+

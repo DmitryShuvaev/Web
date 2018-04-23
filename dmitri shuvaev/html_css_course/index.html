@@ -7,11 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="mediaStyle.css">
 </head>
  
 <body>
 <div class="container">
-  <img src="img/slide_03.jpg" alt="backgound" style="width:100%;">
+  <img id="centbimg" id="bai"src="img/slide_03.jpg" alt="backgound">
 <div class="menu">
 
 <!---<div class="logo"> <img src="/img/black_logo.png" alt="Norway" style="width:100%;"></div>--->
@@ -50,42 +51,51 @@
      <div class="borderTop"></div>
 
 <!---4 images block--->
-    
-<div id="largebox">
-  <div id="box1"> <img src="img/first-service-main.png" alt="logo"  >
-    <h2 class="blacktext">Easy Customizations</h2>
-    <p class="blacktext">Meteor is free HTML website
-      template by Tooplate. Feel free to use this layout for your project.</p></div> 
-    
-    
-      
-  <div id="box2">
-      <img src="img/second-service-main.png" alt="logo"  >
-        <h2 class="blacktext">Creative Ideas</h2>
-    <p class="blacktext">Biodiesel schitz suculents phone
-      cliche ramps snackwave coloring
-      book tumeric poke,typewriter.</p></div>   
-  <div id="box3">
-     <img src="img/third-service-main.png" alt="logo"  >
-        <h2 class="blacktext">Good Profit</h2>
-    <p class="blacktext">Biodiesel schitz suculents phone
-      cliche ramps snackwave coloring
-      book tumeric poke,typewriter.</p>
-    </div>
-  <div id="box4">
-      <img src="img/fourth-service-main.png" alt="logo"  >
-              <h2 class="blacktext">Open To Public</h2>
-    <p class="blacktext">Biodiesel schitz suculents phone
-      cliche ramps snackwave coloring
-      book tumeric poke,typewriter.</p>
-    </div>  
-</div>
+<div class="container14">
+        
   
+    <div class="row1">
+            <div class="forr">
+               <div class="four altext">
+         <img src="img/first-service-main.png" alt="logo"  >
+    <h2 >Easy Customizations</h2>
+    <p class="blacktext">Meteor is free HTML website
+      template by Tooplate. Feel free to use this layout for your project.</p>
+               </div>
+                <div class="four altext">
+                <img src="img/second-service-main.png" alt="logo"  >
+        <h2 class="blacktext">Creative Ideas</h2>
+        <p class="blacktext">Biodiesel schitz suculents phone
+      cliche ramps snackwave coloring
+      book tumeric poke,typewriter.</p>
+               </div>
+                <div class="four altext">
+              <img src="img/third-service-main.png" alt="logo"  >
+        <h2 class="blacktext">Good Profit</h2>
+        <p class="blacktext">Biodiesel schitz suculents phone
+      cliche ramps snackwave coloring
+      book tumeric poke,typewriter.</p>
+               </div>
+                <div class="four lastBlock altext">
+               <img src="img/fourth-service-main.png" alt="logo"  >
+              <h2 class="blacktext">Open To Public</h2>
+       <p class="blacktext">Biodiesel schitz suculents phone
+      cliche ramps snackwave coloring
+      book tumeric poke,typewriter.</p>
+               </div>
+            </div>
+    </div>
+    
 
+</div>    
+
+
+  
+<div id="posScr"></div>
   <!---images block with 2 btns ---> 
     
 <div class="Mainbox">
-      <img src="img/what-we-do-bg.png" alt="backglogo" >
+      <img id="centbimg" id="bai" src="img/what-we-do-bg.png" alt="backglogo" >
     <div class="MainCentralbox">
      <div class="LeftMainbox">
       <h2>New offers just arrived,<br>Get it now and take profit.</h2>
@@ -100,13 +110,18 @@
        </p>
       <!---2buttns ---> 
          
-     
+     <!---
         <ul class="btns_ul">
-         <li><a id="myBtn" class="centbtn2" href="">PURCHASE NOW</a></li>
+         <li><a id="myBtn" class="centbtn2" href="index.html#posScr">PURCHASE NOW</a></li>
          <li><a class="centbtn2" href="">DISCOVER MORE</a></li>
-
+  
         </ul> 
-          
+  --->
+                <nav><ul>
+          <li><a id="myBtn" href="index.html#posScr">PURCHASE NOW</a></li>
+          <li><a href="#">DISCOVER MORE</a></li>
+   
+          </ul></nav>
 
       </div> 
 
@@ -116,6 +131,28 @@
        </div>
     </div>
 
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+      
+ <form id="theForm" action="" method="">
+     <div class="row">
+     <label for="name">Имя:</label>
+     <input type="text" id="name" placeholder="Enter name" name=""><br>
+     </div>
+        <div class="row">
+     <label for="name">Телефон:</label>
+     <input type="tel" id="phone" placeholder="Enter phone" name=""><br>
+        </div>
+        <button type="submit" class="send">Отправить</button>
+ </form>   
+  </div>
+
+</div>
 </div>  
     <h3 align="center" class="blacktext">OUR PORTFOLIO</h3>
         <div class="borderTop"></div>
@@ -191,52 +228,44 @@
     </div>
    <!---Our Blog Posts box ---> 
     
-
-<div class="CTNBox">
-   <img src="img/blog-bg.png" alt="backgound" style="width:100%;">
-    <div class="headerBlogPost">
-            <h3 align="center" >OUR BLOG POSTS</h3>
+<div class="MainBoxcontent1">
+            <div class="headerBlogPost">
+            <h3 align="center" >CONTACT US</h3>
         <div class="borderTopWhite"></div>
-    </div>
-
-   <div class="MainPicBoxcntc">
-         <div class="LeftPicBoxcnt">
-        <img src="img/blog_01.jpg" alt="Nature" >
-             
-             <div class="leftText"> </div>
-             <div class="absp1"><h3>Delecioius Food Served</h3>
+        </div>
+    <div class="pictureBoxwithinfor1">
+      <div class="LeftpictureBox1">
+             <div class="lefImageText1">
+          <h3>Delecioius Food Served</h3>
                  <p>Posted: George /Date:11 Aug 2017 /Categoy:Design</p>
-             
+          
              </div>
-         </div>
-       
-         <div class="RightPicBoxcnt">
-             <div class="rTopim">
-          <img src="img/blog_02.jpg" alt="Nature" >
-                  
-                 <div class="rTopimText"> </div>
-                        <div class="absp">
-                         <h3>Creative & Clean Workspace</h3>
-                               <p>Posted:Kerley /Date:24Jul2017 /Category:Artwork</p>
-                        </div>
-                    
-                
-             </div>
-             
-              <div class="rBotim"> 
-          <img id="leftImginrightbox" src="img/blog_03.jpg" alt="Nature" >
-                 <div class="rBotimText">   </div>
-                        <div class="absp">
-                         <h3>Crashed Plane Captured</h3>
-                               <p>Posted:Johnny /Date: 16Jul2017 /Category:Branding</p>
-                        </div>
-               
-                  
-                  </div>
-         </div> 
-       
-       
-    </div> 
+      </div>
+      <div class="RightpictureBox1">
+                    <div row>
+                         <div class="rowtop1">
+                             <div class="rightTopImageText1">
+                             <h3>Creative & Clean Workspace</h3>
+                               <p>Posted:Kerley /Date:24Jul2017 /Category:Artwork</p> 
+                             </div>
+     
+      
+                         </div>
+                      </div> 
+                    <div row>
+                      
+                            <div class="rowbott1">
+                             <div class="rightTopImageText1">
+                              <h3>Crashed Plane Captured</h3>
+                               <p>Posted:Johnny /Date: 16Jul2017 /Category:Branding</p> 
+                             </div>
+                                
+                            </div>                       
+                         
+                      </div>        
+        
+      </div>
+    </div>
     
 </div>
    <!---Blog4images --->
@@ -266,33 +295,45 @@
    <!---ContactUs Form --->
   
     
-<div class="BckgroundImg">
-  <img src="img/contact-bg.png" alt="backgound" style="width:100%;">
-        <div class="headerBlogPost">
+<div class="MainBoxcontent">
+            <div class="headerBlogPost">
             <h3 align="center" >CONTACT US</h3>
         <div class="borderTopWhite"></div>
         </div>
-    
-    <div class="MainFormBlog">
-      <div class="LeftImgMap">
-              <img src="img/map.jpg" alt="Map" >
-      </div>
-        
-      <div class="RightFormbloginfo">
-     <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-     </div>
-    <div class="col-75">
-        <input type="text" id="ename" name="email" placeholder="Your email..">
-    </div>
-    <div class="col-75mes">
-        <textarea type="text" id="message"  name="mesg" placeholder="Your message.."></textarea>
-    </div>
-        <ul class="btns_ul2">
+    <div class="pictureBoxwithinfor">
+      <div class="LeftpictureBox"></div>
+      <div class="RightpictureBox">
+                    <div row>
+                         <div class="rowtop">
+                             
+                             <div class="texttopname col-75 topleftTexbox">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          
+                             </div>
+                             <div class="texttopname col-75 ">
+                                <input type="text" id="ename" name="email" placeholder="Your email..">
+                             </div>
+                         </div>
+                      </div> 
+                    <div row>
+                      
+                            <div class="rowbott">
+                             <textarea type="text" id="message"  name="mesg" placeholder="Your message.."></textarea>  
+                                
+                            </div>
+                        
+                           <ul class="btns_ul2">
          <li><a class="centbtn2" href="">SEND MESSAGE</a></li>
-        </ul>    
+        </ul>  
+                         
+                     
+                      </div> 
+        
+        
       </div>
     </div>
+    
+</div>
        <!---Footer Form --->
  
     <div id="footer">
@@ -309,19 +350,8 @@
      
         
         
-    </div>
-</div>
-    
-<!-- The Modal -->
-<div id="myModal" class="modal">
+    </div>    
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
     
 <script>
 // Get the modal
@@ -336,6 +366,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+   document.body.scrollTop = 1000;
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -349,6 +380,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 </script>
 </body>
  
